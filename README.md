@@ -178,5 +178,6 @@ django-starwars/
 Project developed using Django and GraphQL  
 **Developer**: Juan David Torres
 **Contact**: judatoba02@gmail.com
+**Portfolio**: https://juandavidtb02.github.io/jdtb-portfolio/
 
 --
