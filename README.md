@@ -131,7 +131,7 @@ movies/tests/
 
 The tests validate both internal model functions and GraphQL operations (queries and mutations).
 
-## 📚 8. Main Project Structure
+## 📚 7. Main Project Structure
 
 ```
 django-starwars/
@@ -163,7 +163,7 @@ django-starwars/
 └── .env
 ```
 
-## 🛠️ 7. Technologies Used
+## 🛠️ 8. Technologies Used
 
 - **Python 3.12+**
 - **Django 5+**
@@ -173,7 +173,7 @@ django-starwars/
 - **python-dotenv**
 - **requests**
 
-## ✨ 8. Credits
+## ✨ 9. Credits
 
 Project developed using Django and GraphQL  
 **Developer**: Juan David Torres
