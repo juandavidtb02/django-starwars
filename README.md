@@ -10,7 +10,7 @@ It allows querying characters, movies, and relationships between them, as well a
 First, clone the repository and install the necessary dependencies.
 
 ```bash
-git clone https://github.com/yourusername/django-starwars.git
+git clone https://github.com/juandavidtb02/django-starwars.git
 cd django-starwars
 ```
 
@@ -72,6 +72,55 @@ Once inside GraphiQL, you can execute queries like:
         name
         gender
         specie
+      }
+    }
+  }
+}
+```
+
+### Get characters, their movies, and filter by name
+
+```graphql
+{
+  allCharacters(name_Icontains: "Luke") {
+    edges {
+      node {
+        id
+        name
+        alias
+        specie
+        birthday
+        gender
+        characterMovies {
+          edges {
+            node {
+              id
+              title
+              releaseDate
+              openingCrawl
+              director {
+                id
+                name
+              }
+              producers {
+                edges {
+                  node {
+                    id
+                    name
+                  }
+                }
+              }
+              planets {
+                edges {
+                  node {
+                    id
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -148,8 +197,6 @@ django-starwars/
 │   ├── management/
 │   │   └── commands/
 │   │       └── load_starwars_data.py
-│   ├── fixtures/
-│   │   └── starwars_data.json
 │   ├── tests/
 │   │   ├── test_unit_models.py
 │   │   ├── test_unit_utils.py
