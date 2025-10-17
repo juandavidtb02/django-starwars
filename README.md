@@ -28,7 +28,7 @@ Install the required libraries:
 pip install -r requirements.txt
 ```
 
-## 🧩 3. Database Creation
+## 🧩 2. Database Creation
 
 Run the initial migrations to build the database:
 
@@ -37,11 +37,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-## 📦 4. Load Initial Data
-
-You have two options to load the base data (characters, movies, planets, etc.):
-
-### Option 1 — Automatic Script
+## 📦 3. Load Initial Data
 
 Run the command that consumes the public Star Wars API and loads the data:
 
@@ -49,21 +45,7 @@ Run the command that consumes the public Star Wars API and loads the data:
 python manage.py load_starwars_data
 ```
 
-### Option 2 — JSON Fixture
-
-If you prefer to use an already saved data file:
-
-```bash
-python manage.py loaddata movies/fixtures/starwars_data.json
-```
-
-If you don't have the fixtures file, you can create one with:
-
-```bash
-python manage.py dumpdata movies > movies/fixtures/starwars_data.json
-```
-
-## 🔥 5. Start the API
+## 🔥 4. Start the API
 
 Start the development server:
 
@@ -75,7 +57,7 @@ Once started, you can access:
 
 - **GraphQL Playground (GraphiQL)**: http://127.0.0.1:8000/graphql/
 
-## 🧠 6. Basic Usage from GraphQL
+## 🧠 5. Basic Usage from GraphQL
 
 Once inside GraphiQL, you can execute queries like:
 
@@ -129,7 +111,7 @@ mutation {
 }
 ```
 
-## 🧪 7. Run Tests
+## 🧪 6. Run Tests
 
 Execute unit and integration tests with:
 
@@ -181,7 +163,7 @@ django-starwars/
 └── .env
 ```
 
-## 🛠️ 9. Technologies Used
+## 🛠️ 7. Technologies Used
 
 - **Python 3.12+**
 - **Django 5+**
@@ -191,7 +173,7 @@ django-starwars/
 - **python-dotenv**
 - **requests**
 
-## ✨ 13. Credits
+## ✨ 8. Credits
 
 Project developed using Django and GraphQL  
 **Developer**: Juan David Torres
